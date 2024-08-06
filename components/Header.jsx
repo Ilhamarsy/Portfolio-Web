@@ -1,12 +1,33 @@
+"use client"
+
 import Link from "next/link";
 import DesktopNav from "./nav/DesktopNav";
 import MobileNav from "./nav/MobileNav";
 
 import { FaGithub } from "react-icons/fa";
+import { useEffect, useState } from "react";
 
 function Header() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="py-6 xl:py-8 text-black">
+    <header className={`py-6 xl:py-8 text-black bg-white transition-all duration-1000 ${scrolled ? "shadow " : ""}`}>
       <div className="container px-4 xl:px-0 mx-auto flex justify-between items-center">
         <Link href="https://www.instagram.com/ham.arsy?igsh=dHY4aXhpNXJxcmZ1">
           <h1 className="text-4xl font-semibold">
