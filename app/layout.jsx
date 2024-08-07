@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       <body className={roboto.variable}>
         <Header />
         {children}
-        <div className="md:hidden">
+        <div className="md:hidden fixed bottom-4 w-full">
           <MobileNav />
         </div>
       </body>
