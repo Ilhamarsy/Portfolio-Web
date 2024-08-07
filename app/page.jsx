@@ -1,28 +1,31 @@
 "use client";
 
-import { MobileNav } from "@/components/nav/MobileNav";
 import Photo from "@/components/Photo";
-import Image from "next/image";
 import { FiDownload } from "react-icons/fi";
 import { Typewriter } from "react-simple-typewriter";
 
+const user = {
+  name: "Ilham Arsy",
+  description: "Student majoring in Informatics at Udayana University with an interest in software development, specifically in backend development.",
+  specialist: [
+  "Student",
+  "Sotfware Developer",
+  "Beginner Developer",
+]}
+
 export default function Home() {
   return (
-    <section className="h-full">
+    <section className="h-full mb-24 md:mb-0 overflow-hidden">
       <div className="container px-4 xl:px-0 mx-auto h-full">
-        <div className="flex flex-col md:flex-row items-center justify-between md:pt-8 xl:pb-24">
-          <div className="text-center md:text-left order-2 md:order-1">
-            <span className="h2 text-gray-400 font-normal">Hi! It's me</span>
-            <h1 className="h1">ILHAM ARSY</h1>
+        <div className="flex flex-col-reverse md:flex-row items-center justify-between md:pt-8 gap-4 md:gap-8">
+          <div className="text-center md:text-left text-container">
+            <span className="h2 text-gray-400 font-normal whitespace-nowrap">Hi! It's me</span>
+            <h1 className="h1 whitespace-nowrap uppercase">{user.name}</h1>
             <span className="h3 text-gray-400 font-normal">
               I'm a{" "}
               <span className="text-accent font-semibold">
                 <Typewriter
-                  words={[
-                    "Student",
-                    "Sotfware Developer",
-                    "Beginner Developer",
-                  ]}
+                  words={user.specialist}
                   loop={false}
                   cursor
                   cursorStyle="_"
@@ -33,6 +36,8 @@ export default function Home() {
               </span>
             </span>
 
+            <p className="text-sm mt-6">{user.description}</p>
+
             <div className="mt-4 flex justify-center md:justify-start">
               <button className="rounded-2xl border-2 border-accent bg-white px-6 py-2 md:px-12 md:py-3 text-sm font-semibold uppercase text-accent transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_#508D4E] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none flex items-center gap-2">
                 Download CV
@@ -41,7 +46,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="order-1 md:order-2">
+          <div>
             <Photo />
           </div>
         </div>

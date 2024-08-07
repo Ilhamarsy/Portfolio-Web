@@ -8,26 +8,58 @@
   }
 
   .h1 {
-    @apply text-[42px] lg:text-[64px] leading-[1.1] font-bold;
+    @apply text-[38px] lg:text-[58px] xl:text-[64px] leading-[1.1] font-bold;
   }
 
   .h2 {
-    @apply text-[28px] lg:text-[40px] leading-[1.1] font-semibold;
+    @apply text-[24px] lg:text-[34px] xl:text-[40px] leading-[1.1] font-semibold;
   }
 
   .h3 {
-    @apply text-[20px] lg:text-[32px] leading-[1.1] font-semibold;
+    @apply text-[18px] lg:text-[28px] xl:text-[34px] leading-[1.1] font-semibold;
+  }
+
+  /* .photo-1 {
+    @apply h-[280px] w-[210px] md:h-[240px] md:w-[170px]
+  }
+
+  .photo-2 {
+    @apply h-[360px] w-[270px] md:h-[320px] md:w-[230px]
+  }
+
+  .photo-3 {
+    @apply h-[210px] w-[310px] md:h-[170px] md:w-[270px]
+  }
+
+  .photo-4 {
+    @apply h-[230px] w-[200px] md:h-[190px] md:w-[160px]
+  } */
+
+  .photo-1 {
+    @apply h-[280px] w-[210px]
+  }
+
+  .photo-2 {
+    @apply h-[360px] w-[270px]
+  }
+
+  .photo-3 {
+    @apply h-[210px] w-[310px]
+  }
+
+  .photo-4 {
+    @apply h-[230px] w-[200px]
   }
 }
 
 header {
   position: sticky;
   top: 0;
-  z-index: 1000; /* Ensures the header is above other content */
-  transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+  z-index: 1000;
+  transition: box-shadow 0.5s ease;
 }
 
 header.shadow {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow style */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
