@@ -15,9 +15,9 @@ const user = {
 
 export default function Home() {
   return (
-    <section className="h-full mb-24 md:mb-0 overflow-hidden">
+    <section className="h-full md:h-[70vh] mb-24 md:mb-0 overflow-hidden">
       <div className="container px-4 xl:px-0 mx-auto h-full">
-        <div className="flex flex-col-reverse md:flex-row items-center justify-between md:pt-8 gap-4 md:gap-8">
+        <div className="flex flex-col-reverse md:flex-row items-center justify-between md:pt-8 gap-4 md:gap-8 h-full">
           <div className="text-center md:text-left text-container">
             <span className="h2 text-gray-400 font-normal whitespace-nowrap">Hi! It's me</span>
             <h1 className="h1 whitespace-nowrap uppercase">{user.name}</h1>

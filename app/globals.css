@@ -19,36 +19,20 @@
     @apply text-[18px] lg:text-[28px] xl:text-[34px] leading-[1.1] font-semibold;
   }
 
-  /* .photo-1 {
-    @apply h-[280px] w-[210px] md:h-[240px] md:w-[170px]
-  }
-
-  .photo-2 {
-    @apply h-[360px] w-[270px] md:h-[320px] md:w-[230px]
-  }
-
-  .photo-3 {
-    @apply h-[210px] w-[310px] md:h-[170px] md:w-[270px]
-  }
-
-  .photo-4 {
-    @apply h-[230px] w-[200px] md:h-[190px] md:w-[160px]
-  } */
-
   .photo-1 {
-    @apply h-[280px] w-[210px]
+    @apply lg:h-[280px] lg:w-[210px] md:h-[200px] md:w-[130px]
   }
 
   .photo-2 {
-    @apply h-[360px] w-[270px]
+    @apply lg:h-[360px] lg:w-[270px] md:h-[280px] md:w-[190px]
   }
 
   .photo-3 {
-    @apply h-[210px] w-[310px]
+    @apply lg:h-[210px] lg:w-[310px] md:h-[130px] md:w-[190px]
   }
 
   .photo-4 {
-    @apply h-[230px] w-[200px]
+    @apply lg:h-[230px] lg:w-[200px] md:h-[150px] md:w-[120px]
   }
 }
 
