@@ -4,20 +4,12 @@ function Photo() {
       <div className="flex flex-row gap-2">
         <div className="self-end relative photo-1 hidden md:block ">
           <div className="h-full w-full bg-gradient-to-tr from-white from-10% via-white/80 via-40% to-transparen absolute" />
-          <img
-            src="./assets/home_pic/pic-1.jpg"
-            className="h-full w-full rounded-md"
-            alt="photo-1"
-          />
+          <div className="bg-[url('/assets/home_pic/pic-1.jpg')] bg-cover h-full w-full rounded-md"></div>
         </div>
 
         <div className="self-center relative photo-2 hidden md:block">
           <div className="h-full w-full bg-white/30 absolute" />
-          <img
-            src="./assets/home_pic/pic-2.jpg"
-            className="h-full w-full rounded-md object-cover"
-            alt="photo-1"
-          />
+          <div className="bg-[url('/assets/home_pic/pic-2.jpg')] bg-cover h-full w-full rounded-md"></div>
         </div>
       </div>
 
@@ -33,30 +25,18 @@ function Photo() {
         <div className="h-full w-full bg-gradient-to-b from-white to-transparen to-45% absolute" />
         <div className="h-full w-full bg-gradient-to-l from-white to-transparen to-45% absolute" />
         <div className="h-full w-full bg-gradient-to-r from-white to-transparen to-45% absolute" />
-        <img
-          src="./assets/home_pic/pic-2.jpg"
-          className="h-full w-full rounded-md object-cover"
-          alt="photo-1"
-        />
+        <div className="bg-[url('/assets/home_pic/pic-2.jpg')] bg-cover h-full w-full rounded-md"></div>
       </div>
 
       <div className="flex flex-col gap-2 mb-4">
         <div className="relative photo-3 hidden md:block">
           <div className="h-full w-full bg-white/30 bg-gradient-to-b from-white from-10% via-white/80 via-40% to-transparen absolute" />
-          <img
-            src="./assets/home_pic/pic-3.jpg"
-            className="h-full w-full rounded-md object-cover"
-            alt="photo-1"
-          />
+          <div className="bg-[url('/assets/home_pic/pic-3.jpg')] bg-cover h-full w-full rounded-md"></div>
         </div>
 
         <div className="relative photo-4 hidden md:block">
           <div className="h-full w-full bg-gradient-to-tl from-white from-10% via-white/80 via-40% to-transparen absolute" />
-          <img
-            src="./assets/home_pic/pic-4.jpg"
-            className="h-full w-full rounded-md object-cover"
-            alt="photo-1"
-          />
+          <div className="bg-[url('/assets/home_pic/pic-4.jpg')] bg-cover bg-center h-full w-full rounded-md"></div>
         </div>
       </div>
     </div>

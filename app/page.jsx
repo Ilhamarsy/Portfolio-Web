@@ -1,6 +1,7 @@
 "use client";
 
 import Photo from "@/components/Photo";
+import Link from "next/link";
 import { FiDownload } from "react-icons/fi";
 import { Typewriter } from "react-simple-typewriter";
 
@@ -36,13 +37,15 @@ export default function Home() {
               </span>
             </span>
 
-            <p className="text-sm mt-6">{user.description}</p>
+            <p className="text-sm mt-6 sm:max-w-[400px] md:max-w-full">{user.description}</p>
 
             <div className="mt-4 flex justify-center md:justify-start">
+              <Link href="https://docs.google.com/document/d/1qRJKDOrB1EoND-LFanMvrKX6W8dS44-z/edit?usp=sharing&ouid=111503191358255056030&rtpof=true&sd=true">
               <button className="rounded-2xl border-2 border-accent bg-white px-6 py-2 md:px-12 md:py-3 text-sm font-semibold uppercase text-accent transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_#508D4E] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none flex items-center gap-2">
                 Download CV
                 <FiDownload className="text-xl sm:text-base" />
               </button>
+              </Link>
             </div>
           </div>
 
