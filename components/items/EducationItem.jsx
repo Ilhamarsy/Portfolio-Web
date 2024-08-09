@@ -1,10 +1,9 @@
 import React from "react";
 
-function EducationItem({ key, data }) {
+function EducationItem({ data }) {
   return (
     <li
-      key={key}
-      className="min-h-[170px] border-[1px] border-black py-2 px-4 rounded-xl flex flex-col items-start gap-1 shadow-md hover:shadow-lg justify-between"
+      className="min-h-[170px] border-[1px] border-black py-2 px-4 rounded-xl flex flex-col items-start gap-1 shadow-md hover:shadow-md hover:shadow-black/60 shadow-black/30 justify-between transition-all"
     >
       <div className="w-full text-center md:text-start">
         <span className="text-sm text-accent">{data.date}</span>
