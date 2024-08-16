@@ -1,5 +1,3 @@
-import React from "react";
-
 function ExperienceItem({ data }) {
   return (
     <li

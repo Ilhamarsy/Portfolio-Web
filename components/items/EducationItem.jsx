@@ -1,5 +1,3 @@
-import React from "react";
-
 function EducationItem({ data }) {
   return (
     <li

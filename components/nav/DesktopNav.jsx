@@ -18,7 +18,7 @@ const links = [
   },
 ];
 
-function DesktopNav() {
+function DesktopNav({classname}) {
   const pathName = usePathname();
   return (
     <nav className="flex gap-8">
@@ -28,7 +28,7 @@ function DesktopNav() {
           key={index}
           className={`${
             link.path === pathName ? "text-accent border-b-2 border-accent" : ""
-          } capitalize font-medium hover:text-accent transition-all`}
+          } capitalize font-medium hover:text-accent transition-all ${classname}`}
         >
           {link.name}
         </Link>
